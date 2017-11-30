@@ -4,8 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "start": "pm2 start config/pm2.json --no-daemon",
-    "stop": "pm2 stop config/pm2.json",
+    "start": "node dist/index.js",
     "watch": "rimraf dist && tsc -w",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,7 +15,6 @@
     "@types/config": "0.0.33",
     "@types/express": "^4.0.39",
     "@types/request": "^2.0.8",
-    "pm2": "^2.8.0",
     "rimraf": "^2.6.2",
     "typescript": "^2.6.2"
   },
