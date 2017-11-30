@@ -6,7 +6,8 @@
   "scripts": {
     "start": "pm2 start config/pm2.json --no-daemon",
     "stop": "pm2 stop config/pm2.json",
-    "build": "rimraf dist && tsc -w",
+    "watch": "rimraf dist && tsc -w",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

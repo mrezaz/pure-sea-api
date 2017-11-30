@@ -1,5 +1,6 @@
 import * as express from "express";
 import * as cors from "cors";
+import * as config from "config";
 
 import { CNN } from "./modules/cnn";
 
@@ -33,4 +34,5 @@ app.get("/twitter", async (req, res) => {
   }
 });
 
-app.listen("8080");
+const port = config.get<string>("port");
+app.listen(port);
